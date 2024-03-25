@@ -67,4 +67,24 @@ delete_by_lastname(students_grades, StudLastname)
 
 print(students_grades)
 # =============================================================================================================================
+# Функція пошуку у словнику. Створив - Добродумов Нікіта Сергійович
+def find_student_by_lastname(students, last_name):
+    found_students = []
+    for student_id, student_data in students["students"].items():
+        if student_data["last_name"] == last_name:
+            found_students.append(student_data)
+
+    if found_students:
+        print(f"Знайдено студентів з прізвищем {last_name}:")
+        for student in found_students:
+            print(
+                f"ID: {student_id}, Прізвище: {student['last_name']}, Ім'я: {student['first_name']}, По-батькові: {student['middle_name']}, Курс: {student['course']}, Предмети та оцінки: {student['subjects']}")
+    else:
+        print(f"Студентів з прізвищем {last_name} не знайдено.")
+
+
+print("Введіть прізвище студента для пошуку: ")
+StudLastname = input()
+find_student_by_lastname(students_grades, StudLastname)
+# =============================================================================================================================
 
