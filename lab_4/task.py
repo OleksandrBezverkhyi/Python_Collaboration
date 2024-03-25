@@ -33,3 +33,14 @@ print("Індекс першого входження слова '",
 print(replaced_text)
 
 #====================================================================
+# Функції Добродумова Нікіти Сергійовича
+# Застосування функцій title(), isalpha() та isdigit()
+# title() - кожне слово з великої літери
+# isalpha() - чи є весь текст з букв
+# isdigit() - чи є весь текст з цифр
+text_title = text.title()
+text_isalpha = text.isalpha()
+text_isdigit = text.isdigit()
+print("title() - ", text_title)
+print("isaplha() - ", text_isalpha)
+print("isdigit() - ", text_isdigit)
