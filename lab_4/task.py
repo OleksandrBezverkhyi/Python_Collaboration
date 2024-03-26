@@ -62,3 +62,34 @@ formated_text = ' '.join(words)
 
 print(formated_text)
 
+#====================================================================
+# Функції Добродумова Савченка Максима
+# Застосування функцій counter.most_common(), .replace(), ord()
+# counter.most_common() - рахуєкількість кількість повтору унікальних символів
+# .replace() - видаляє символ
+# .ord() - представляй кожен символ в виді Юнікоду
+
+import collections
+
+texts = [text, text, text]
+
+# 1. Вивести найчастіше зустрічаємі символи в тексті
+counter = collections.Counter(texts[0])
+most_common_chars = counter.most_common(5)
+print("Найчастіше зустрічаємі символи:")
+for char, count in most_common_chars:
+    print(f"Символ '{char}' зустрічається {count} разів")
+
+# 2. Вивести текст без пробілів
+text_without_spaces = texts[1].replace(" ", "")
+print("\nТекст без пробілів:\n")
+print(text_without_spaces)
+
+# 3. Представити всі символи в виді юнікоду
+print("\nТекст у вигляді юнікоду:\n")
+unicode_text = [ord(char) for char in texts[2]]
+print(unicode_text)
+
+formated_text = ' '.join(words)
+
+print(formated_text)
