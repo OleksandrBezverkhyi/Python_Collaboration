@@ -87,4 +87,15 @@ print("Введіть прізвище студента для пошуку: ")
 StudLastname = input()
 find_student_by_lastname(students_grades, StudLastname)
 # =============================================================================================================================
+# Функція знаходження середнього балу та виведення його в спадаючому порядку. Створив — Савченко Максим
+def calculate_average_grades(students_grades):
+    averages = []
 
+    for student in students_grades["students"].values():
+        average_grade = sum(student["subjects"].values()) / len(student["subjects"])
+        averages.append((student["last_name"], student["first_name"], student["middle_name"], average_grade))
+
+    averages.sort(key=lambda x: x[-1], reverse=True)
+
+    for last_name, first_name, middle_name, average_grade in averages:
+        print(f"{last_name} {first_name} {middle_name}: {average_grade:.2f}")
