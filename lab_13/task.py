@@ -31,4 +31,10 @@ def csv_to_json(csv_file, json_file):
 
 # Конвертація
 csv_to_json('data.csv', 'data.json')
+
+#початковий вміст файлу data.csv:
+#Name,Age,City
+#Victor,20,Sumy
+#Alina,19,Kyiv
+#Stepan,18,Zhytomyr
 #=============================================================================
