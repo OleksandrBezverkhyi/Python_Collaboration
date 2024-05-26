@@ -38,3 +38,20 @@ csv_to_json('data.csv', 'data.json')
 #Alina,19,Kyiv
 #Stepan,18,Zhytomyr
 #=============================================================================
+
+def write_to_csv(file_name, data):
+    # file_name - рядок, що містить ім'я файлу, наприклад 'data.csv'
+    # data - список словників, де ключі - це заголовки стовпців
+    with open(file_name, mode='w', newline='', encoding='utf-8') as file:
+        writer = csv.DictWriter(file, fieldnames=data[0].keys())
+        writer.writeheader()
+        writer.writerows(data)
+
+# Приклад використання функції
+data_to_write = [
+    {'name': 'John', 'age': 30, 'city': 'New York'},
+    {'name': 'Anna', 'age': 25, 'city': 'London'},
+    {'name': 'Peter', 'age': 35, 'city': 'Berlin'}
+]
+
+write_to_csv('people.csv', data_to_write)
