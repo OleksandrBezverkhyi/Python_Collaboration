@@ -57,3 +57,10 @@ data_to_write = [
 write_to_csv('new_data.csv', data_to_write)
 
 cvs_to_json("new_data.csv", "new_data_by_Savchenko.json")
+
+# Вміст файлу new_data_by_Savchenko.csv:
+#Name,Age,City
+#Victor,20,Sumy
+#Alina,19,Kyiv
+#Stepan,18,Zhytomyr
+#=============================================================================
