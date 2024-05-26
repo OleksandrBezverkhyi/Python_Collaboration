@@ -54,4 +54,6 @@ data_to_write = [
     {'name': 'Peter', 'age': 35, 'city': 'Berlin'}
 ]
 
-write_to_csv('people.csv', data_to_write)
+write_to_csv('new_data.csv', data_to_write)
+
+cvs_to_json("new_data.csv", "new_data_by_Savchenko.json")
