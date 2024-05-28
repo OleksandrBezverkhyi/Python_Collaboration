@@ -1,0 +1,47 @@
+[
+    {
+        "age": "30",
+        "city": "New York",
+        "name": "John"
+    },
+    {
+        "age": "25",
+        "city": "London",
+        "name": "Anna"
+    },
+    {
+        "age": "35",
+        "city": "Berlin",
+        "name": "Peter"
+    },
+    {
+        "age": "20",
+        "city": "Sumy",
+        "name": "Ivan"
+    },
+    {
+        "age": "35",
+        "city": "Dubai",
+        "name": "Mahmut"
+    },
+    {
+        "age": "19",
+        "city": "Tokio",
+        "name": "Yasuke"
+    },
+    {
+        "name": "Vlad",
+        "age": 950,
+        "city": "Castlevania"
+    },
+    {
+        "name": "Jane",
+        "age": 28,
+        "city": "Berlin"
+    },
+    {
+        "name": "Jonson",
+        "age": 54,
+        "city": "Boston"
+    }
+]
