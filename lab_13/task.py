@@ -38,6 +38,7 @@ def csv_to_json(csv_file, json_file):
 #Alina,19,Kyiv
 #Stepan,18,Zhytomyr
 #=============================================================================
+#Код написаний Савченко Максимом
 
 def write_to_csv(file_name, data):
     # file_name - рядок, що містить ім'я файлу, наприклад 'data.csv'
@@ -135,7 +136,7 @@ write_to_json_file('new_data_by_Savchenko.json', data_to_write)
 
 json_to_csv('new_data_by_Savchenko.json', 'new_data_by_Dobrodumov.csv')
 
-# вміст файлу data.csv:
+# вміст файлу new_data_by_Dobrodumov.csv:
 #age,name,city
 #30,John,New York
 #25,Anna,London
