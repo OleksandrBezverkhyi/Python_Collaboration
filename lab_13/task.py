@@ -57,7 +57,7 @@ data_to_write = [
 
 write_to_csv('new_data.csv', data_to_write)
 
-cvs_to_json("new_data.csv", "new_data_by_Savchenko.json")
+csv_to_json("new_data.csv", "new_data_by_Savchenko.json")
 
 # Вміст файлу new_data_by_Savchenko.csv має наступну структуру:
 # "name": "Peter",
@@ -147,3 +147,41 @@ json_to_csv('new_data_by_Savchenko.json', 'new_data_by_Dobrodumov.csv')
 #20,Ivan,Sumy
 #35,Mahmut,Dubai
 #19,Yasuke,Tokio
+#=============================================================================
+#Код написав Багно Тимофій
+
+data_to_write = [
+    {'name': 'Vlad', 'age': 950, 'city': 'Castlevania'},
+    {'name': 'Jane', 'age': 28, 'city': 'Berlin'},
+    {'name': 'Jonson', 'age': 54, 'city': 'Boston'}
+]
+
+csv_to_json("new_data_by_Dobrodumov.csv", "new_data_by_Bagno.json")
+write_to_json_file("new_data_by_Bagno.json", data_to_write)
+#    "age": "30",
+#    "city": "New York",
+#    "name": "John"
+#    "age": "25",
+#    "city": "London",
+#    "name": "Anna"
+#    "age": "35",
+#    "city": "Berlin",
+#    "name": "Peter"
+#    "age": "20",
+#    "city": "Sumy",
+#    "name": "Ivan"
+#    "age": "35",
+#    "city": "Dubai",
+#    "name": "Mahmut"
+#    "age": "19",
+#    "city": "Tokio",
+#    "name": "Yasuke"
+#    "name": "Vlad",
+#    "age": 950,
+#    "city": "Castlevania"
+#    "name": "Jane",
+#    "age": 28,
+#    "city": "Berlin"
+#    "name": "Jonson",
+#    "age": 54,
+#    "city": "Boston"
